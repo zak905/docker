@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "performing backup on source database using pg_dumpall"
+echo "performing backup on source database using pg_dump"
 
 export PGHOST=$SOURCE_DB_HOST
 export PGUSER=$SOURCE_DB_USER
