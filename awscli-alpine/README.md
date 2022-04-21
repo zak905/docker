@@ -1,0 +1,1 @@
+you can use `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` environment variables to configure aws IAM. To run the container, you need to override the default command, e.g `docker run -e AWS_ACCESS_KEY_ID=EXAMPLE -e AWS_SECRET_ACCESS_KEY=SECRET -e AWS_REGION=us-east-1 zamine/awscli-alpine /bin/sh -c "aws s3 cp s3://bucket/archive.tar . && tar -xvf archive.tar"`
