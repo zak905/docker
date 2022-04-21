@@ -5,4 +5,5 @@ RUN apk add --no-cache wget ca-certificates bash && \
 
 RUN chmod 755 wait-for-it.sh
 
-ENTRYPOINT  ./wait-for-it.sh --timeout=0 $HOST_ADDR -- 
+ENTRYPOINT  ./wait-for-it.sh $HOST_ADDR
+CMD [ "--timeout=0", "--"] 
