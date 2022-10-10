@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-ARG GOLANG_VERSION=1.17.11 
+ARG GOLANG_VERSION=1.19.2 
 
 #we need the go version installed from apk to bootstrap the custom version built from source
 RUN apk update && apk add go gcc bash musl-dev openssl-dev ca-certificates && update-ca-certificates
